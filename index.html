@@ -1,24 +1,34 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>YouTube API</title>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="main.css"/>
-	<script src="query.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-	<nav role="">
+	<nav role="banner">
+		<div class="container">
+			<span class="before"></span>
+			<p class="you">Your<span class="tube">Tube</span></p>
+			<span class="after"></span> 
+		</div>
 	</nav>
 	<main>
-		<h1>Search repos by name on YouTube</h1>
+		<h1 class="js-return-title">Search repos by name on YouTube</h1>
 		<form>
 			<label for="query"></label>
-			<input type="text" class="js-query">
+			<input type="text" id="js-query" role="combobox">
 			<button class="js-search-button" type="submit">Search</button>
 		</form>
-		<h2>Results</h2>
-		<div class="js-search-results">
-			
+		<h2 class="resultsHeading">Results</h2>
+		<div class="js-search-results">	
 		</div>
+		<div class="js-channel-results"></div>
 	</main>
 	<script src="index.js"></script>
 </body>

@@ -21,6 +21,9 @@ nav:after {
 	
 }
 
+div {
+	box-sizing: border-box;
+}
 
 p.you, p.tube {
 	font-family: 'Teko', sans-serif;
@@ -124,4 +127,71 @@ span.before{
 main {
 	padding: 10px;
 	margin: 10px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	box-sizing: border-box;
+}
+.js-search-button {
+	width: 100px;
+	background-color: #fc0d1c;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: white;
+	font-size: 18px;
+}
+
+.returnTitle {
+	font-family: 'Roboto', sans-serif;
+	width: 300px;
+	text-transform: uppercase;
+}
+
+.returnName {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #6d6e6a;
+}
+
+.resultsHeading {
+	margin-top: 20px;
+	font-size: 2em;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 20px;
+}
+.js-return-title {
+	font-family: 'Roboto', sans-serif;
+	width: 300px;
+	text-transform: uppercase;
+	color: #6d6e6a;
+	padding-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 10px;
+	padding-top: 20px;
+}
+
+.thumbnails {
+	width: 200px;
+	margin: 10px 0px 20px 10px;
+	float: left;
+	display: inline;
+
+}
+#js-query {
+	width: 200px;
+	font-size: 18px;
+	background-color: #c7cbd1;
+}
+
+.js-channel-title {
+	color: #6d6e6a;
+	font-size: 1.3rem;
+	display: inline-block;
+	width: 80px;
+}
+a:link {
+	color: #6d6e6a;
+	text-decoration: none;
+	padding: 10px;
+}
+a:visited {
+	color: red;
+	text-decoration: none;
+	padding: 10px;
 }

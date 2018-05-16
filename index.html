@@ -8,7 +8,7 @@
   crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="main.css"/>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto" rel="stylesheet">
 </head>
 <body>
 	<nav role="banner">
@@ -19,14 +19,15 @@
 		</div>
 	</nav>
 	<main>
-		<h1 class="js-return-title">Search repos by name on YouTube</h1>
+		<h1 class="returnTitle">Search repos on YouTube</h1>
+			<h2 class="returnNname">Name:</h2>
 		<form>
-			<label for="query"></label>
+			<label for="query" aria-label="explicit"></label>
 			<input type="text" id="js-query" role="combobox">
 			<button class="js-search-button" type="submit">Search</button>
 		</form>
 		<h2 class="resultsHeading">Results</h2>
-		<div class="js-search-results">	
+		<div class="js-search-results" aria-live="assertive">	
 		</div>
 		<div class="js-channel-results"></div>
 	</main>

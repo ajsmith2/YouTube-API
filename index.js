@@ -12,10 +12,10 @@ function generateVideoElement(item) {
     return `<div> 
         <h2 class="js-return-title"> ${item.snippet.title} </h2>
         <a href="https://www.youtube.com/watch?v=${item.id.videoId}"> 
-            <img src="${item.snippet.thumbnails.default.url}"></img>
+            <img class="thumbnails" src="${item.snippet.thumbnails.default.url}" role="presentation" alt="${item.snippet.description}"></img>
         </a>
         <a href="https://www.youtube.com/channel/${item.snippet.channelId}">
-        	<p>${item.snippet.channelTitle}</p>
+        	<p class="js-channel-title">${item.snippet.channelTitle}</p>
     	</a>
     </div>`
 }
